@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warkop Andreas</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <!-- Script -->
+    <script src="js/carousel.js" defer></script>
+
+    <!-- My style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="my-scrollbar">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"
+        ><img src="assets/image/andreaslogo.png" alt="andreaslogo" class="logo"
+      /></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#products">Produk</a>
+        <a href="#contact">Kontak kami</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="list-cart"
+          ><ion-icon name="reader-outline"></ion-icon
+        ></a>
+        <a href="#" id="search-button"
+          ><ion-icon name="search-outline"></ion-icon
+        ></a>
+        <a href="#" id="shopping-cart-button"
+          ><ion-icon name="cart-outline"></ion-icon
+        ></a>
+        <a href="#" id="hamburger-menu"
+          ><ion-icon name="menu-outline"></ion-icon
+        ></a>
+      </div>
+      <!-- Seacrh form -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="pilari didieu..." />
+        <label for="search-box"
+          ><ion-icon name="search-outline"></ion-icon
+        ></label>
+      </div>
+      <!-- Seacrh form Akhir -->
+
+      <!-- Shopping Cart -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="assets/image/Menu/products/jcc.jpeg" alt="Minyak jss" />
+          <div class="item-detail">
+            <h3>Minyak JCC</h3>
+            <div class="item-price">Rp. 25,000</div>
+          </div>
+          <ion-icon name="trash-outline" class="remove-item"></ion-icon>
+        </div>
+        <div class="cart-item">
+          <img src="assets/image/Menu/products/jcc.jpeg" alt="Minyak jss" />
+          <div class="item-detail">
+            <h3>Minyak JCC</h3>
+            <div class="item-price">Rp. 25,000</div>
+          </div>
+          <ion-icon name="trash-outline" class="remove-item"></ion-icon>
+        </div>
+        <div class="cart-item">
+          <img src="assets/image/Menu/products/jcc.jpeg" alt="Minyak jss" />
+          <div class="item-detail">
+            <h3>Minyak JCC</h3>
+            <div class="item-price">Rp. 25,000</div>
+          </div>
+          <ion-icon name="trash-outline" class="remove-item"></ion-icon>
+        </div>
+      </div>
+      <!-- Shopping Cart Akhir -->
+
+      <!-- List cirian -->
+      <!-- <div class="dream-list">
+        <div class="grocery-list">
+          <input type="checkbox" name="my-list" id="plan-list" />
+          <div class="menu-detail">
+            <h3>Bawang beureum</h3>
+            <div class="item-price">Rp. 1,2345</div>
+          </div>
+          <ion-icon name="trash-outline" class="remove-list"></ion-icon>
+        </div>
+        <div class="grocery-list">
+          <input type="checkbox" name="my-list" id="plan-list" />
+          <div class="menu-detail">
+            <h3>Bawang bodas</h3>
+            <div class="item-price">Rp. 1,2345</div>
+          </div>
+          <ion-icon name="trash-outline" class="remove-list"></ion-icon>
+        </div>
+        <div class="grocery-list">
+          <input type="checkbox" name="my-list" id="plan-list" />
+          <div class="menu-detail">
+            <h3>Muncang</h3>
+            <div class="item-price">Rp. 1,2345</div>
+          </div>
+          <ion-icon name="trash-outline" class="remove-list"></ion-icon>
+        </div>
+        <div class="grocery-list">
+          <input type="checkbox" name="my-list" id="plan-list" />
+          <div class="menu-detail">
+            <h3>Babangi</h3>
+            <div class="item-price">Rp. 1,2345</div>
+          </div>
+          <ion-icon name="trash-outline" class="remove-list"></ion-icon>
+        </div>
+      </div> -->
+      <!-- List cirian Akhir -->
+    </nav>
+    <!-- Navbar Akhir -->
+
+    <!-- Hero section -->
+
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Hayu, ngopi heula <span>"didieu"</span></h1>
+        <p>
+          Teu sawios nganjuk heula ge pami tatangga mah, tapi kedah seueur
+          orderna.
+        </p>
+        <a href="" class="cta">Meser ayeuna</a>
+      </main>
+    </section>
+    <!-- Hero section Akhir -->
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>"Ngeunaan Warung"</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="assets/image/about.jpg" alt="Tentang kami" />
+        </div>
+        <div class="content">
+          <h3>Carita sejarah</h3>
+          <p>
+            Warkop Andreas anu dimana sok disebat warung AA ieu atos didirikeun
+            atanapi awal didirikeunna nyaeta tahun 2016. Awalna warung ieu
+            henteu dinamian Warung AA, kumargi saacanna digaduhan ku dua urang,
+            pendiri anu kahiji nyaeta
+            <a href="https://www.instagram.com/ademiftahulmubarok/"
+              >Ade Miftahul Mubarok</a
+            >, sareng pendiri anu kaduana nyaeta mamang ti pendiri pertama,
+            namina Anang Jamaludin anu kaleresan anjeunna atos ngantunkeun di
+            tahun 2021.
+          </p>
+          <p>
+            <span>
+              اَللَّهُمَّ اغْفِرْ لَهُ وَارْحَمْهُ وَعَافِهِ وَاعْفُ عَنْهُ،
+              وَأَكْرِمْ نُزُلَهُ، وَوَسِّعْ مَدْخَلَهُ، وَاغْسِلْهُ بِالْمَاءِ
+              وَالثَّلْجِ وَالْبَرَدِ، وَنَقِّهِ مِنَ الْخَطَايَا كَمَا
+              نَقَّيْتَ الثَّوْبَ اْلأَبْيَضَ مِنَ الدَّنَسِ، وَأَبْدِلْهُ
+              دَارًا خَيْرًا مِنْ دَارِهِ، وَأَهْلاً خَيْرًا مِنْ أَهْلِهِ،
+              وَزَوْجًا خَيْرًا مِنْ زَوْجِهِ، وَأَدْخِلْهُ الْجَنَّةَ،
+              وَأَعِذْهُ مِنْ عَذَابِ الْقَبْرِ وَعَذَابِ النَّارِ </span
+            ><br />
+            <span class="alfatihah">Alfatihah</span> kange Almarhum, Aamiin.
+          </p>
+          <p>
+            Salajengna warung AA ieu diteraskeun ku
+            <a href="https://www.instagram.com/ademiftahulmubarok/"
+              >Ade Miftahul Mubarok</a
+            >
+            sareng keluargana, anu dimana nami warung AA ieu dicandak ti nami
+            putra kahijina nyaeta
+            <span class="azka">Azka Andreas Baihaqi Kaidzan</span>, ku nami eta
+            diharepkeun warung ieu kapayunna tiasa ngalap manfaat kange
+            masyarakat sekitar supados henteu tebih teuing ka tempat belanja
+            kange kebutuhan sadidinten. Warung AA sanes mung icalan kopi
+            hungkul, tapi kumargi mayoritas masyarakatna seseeurna resep ngopi
+            di warung AA ieu, janten mendominasi kange dinamian Warkop.
+          </p>
+          <h3>Kunaon kedah Warkop Andreas?</h3>
+          <p>
+            Warkop andreas ayana di Jl Pasir kanang, Ciwarak, Kec. Jatiwaras,
+            Kabupaten Tasikmalaya, Jawa Barat 46185. Ieu tempat teh kaleresan di
+            pinggir jalan kange liliwatan keur masyarakat anu sering ka kebon
+            atanapi ka sawah, janten pami bade barang bekel kange ka kebon
+            atanapi ka sawahna, teu kedah nyandak sagala rupi cacandakan ti
+            bumi, cekap nyimpang heula ka Warkop Andreas ieu. <br />
+            Atanapi kange bapak-bapak anu resep kopi, tiasa ngopi heula saacan
+            dugi ka kebonna didieu. Bade ngaMie? didieu sadia Miena sareng tiasa
+            dipasak langsung di Warkop Andreas, kantun dipesen. Warkop Andreas
+            nyadiakeun sagala rupi macem kebutuhan masyarakat sadidinten, bade
+            dina hal emameun, jajanan barudak, bahan masakan, atanapi jajanan
+            bapak-bapak oge sadia di Warkop Andreas.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section Akhir -->
+
+    <!-- Menu section -->
+    <section id="menu" class="menu">
+      <h2>"Ménu Warung"</h2>
+      <p class="menu-subtitle">
+        Menu ngeunah harga mirah, tapi rasa mah teu kalah ti menu anu mahal.
+      </p>
+      <div class="item">
+        <div class="item-name">
+          <h3>Kopi sareng susu</h3>
+        </div>
+        <div class="apaatuh">
+          <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="assets/image/Menu/kopi-hitam.jpg"
+                    alt="kopi-hitam"
+                    draggable="false"
+                  />
+                </div>
+                <h3>Kopi hideung</h3>
+                <span>Rp. 2,500</span>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="assets/image/Menu/kopi-susu.jpg"
+                    alt="kopi susu"
+                    draggable="false"
+                  />
+                </div>
+                <h3>Kopi Susu</h3>
+                <span>Rp. 2,500</span>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="assets/image/Menu/kopi-luwak.jpeg"
+                    alt="kopi luwak"
+                    draggable="false"
+                  />
+                </div>
+                <h3>Kopi Luwak</h3>
+                <span>Rp. 2,500</span>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="assets/image/Menu/kopi-mix.jpg"
+                    alt="kopi mix"
+                    draggable="false"
+                  />
+                </div>
+                <h3>Kopi Mix</h3>
+                <span>Rp. 2,500</span>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="assets/image/Menu/mocachino.jpg"
+                    alt="mocachino"
+                    draggable="false"
+                  />
+                </div>
+                <h3>Kopi Moca</h3>
+                <span>Rp. 2,500</span>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="assets/image/Menu/susu-jahe.jpg"
+                    alt="susu jahe"
+                    draggable="false"
+                  />
+                </div>
+                <h3>Susu Jahe</h3>
+                <span>Rp. 2,500</span>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="assets/image/Menu/susu-putih.jpg"
+                    alt="susu putih"
+                    draggable="false"
+                  />
+                </div>
+                <h3>Susu Putih</h3>
+                <span>Rp. 3,000</span>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="assets/image/Menu/susu-coklat.jpg"
+                    alt="susu coklat"
+                    draggable="false"
+                  />
+                </div>
+                <h3>Susu Coklat</h3>
+                <span>Rp. 3,000</span>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="assets/image/Menu/energen.jpeg"
+                    alt="energen"
+                    draggable="false"
+                  />
+                </div>
+                <h3>Energen</h3>
+                <span>Rp. 3,000</span>
+              </li>
+              <li class="card">
+                <div class="img">
+                  <img
+                    src="assets/image/Menu/chocolatos.jpg"
+                    alt="chocolatos"
+                    draggable="false"
+                  />
+                </div>
+                <h3>Chocolatos</h3>
+                <span>Rp. 3,000</span>
+              </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <h3 class="title">Pangabutuh sadidinten</h3>
+      <div class="products-container">
+        <div class="product" data-name="p-1">
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/bawang-merah.jpg"
+            alt="bawang merah"
+          />
+          <h3>Bawang beureum</h3>
+          <span class="product-price">Rp. 1,2345</span>
+        </div>
+        <div class="product" data-name="p-2">
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/bawang-putih.jpg"
+            alt="bawang putih"
+          />
+          <h3>Bawang bodas</h3>
+          <span class="product-price">Rp. 1,2345</span>
+        </div>
+        <div class="product" data-name="p-3">
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/kemiri.jpg"
+            alt="kemiri"
+          />
+          <h3>Muncang</h3>
+          <span class="product-price">Rp. 1,2345</span>
+        </div>
+        <div class="product" data-name="p-4">
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/kerupuk-mentah.jpg"
+            alt="kerupuk-mentah"
+          />
+          <h3>Babangi</h3>
+          <span class="product-price">Rp. 1,2345</span>
+        </div>
+        <div class="product" data-name="p-5">
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/terigu.jpg"
+            alt="terigu"
+          />
+          <h3>Tarigu</h3>
+          <span class="product-price">Rp. 1,2345</span>
+        </div>
+        <div class="product" data-name="p-6">
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/tepung-tapioka.jpg"
+            alt="tepung tapioka"
+          />
+          <h3>Aci</h3>
+          <span class="product-price">Rp. 1,2345</span>
+        </div>
+        <div class="product" data-name="p-7">
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/minyak-goreng.jpg"
+            alt="minyak goreng"
+          />
+          <h3>Minyak goreng</h3>
+          <span class="product-price">Rp. 1,2345</span>
+        </div>
+        <div class="product" data-name="p-8">
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/telur.jpg"
+            alt="telur"
+          />
+          <h3>Endog</h3>
+          <span class="product-price">Rp. 1,2345</span>
+        </div>
+        <div class="product" data-name="p-9">
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/bihun.jpg"
+            alt="bihun"
+          />
+          <h3>Bihun</h3>
+          <span class="product-price">Rp. 1,2345</span>
+        </div>
+        <div class="product" data-name="p-10">
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/tahu.jpg"
+            alt="tahu"
+          />
+          <h3>Tahu</h3>
+          <span class="product-price">Rp. 1,2345</span>
+        </div>
+        <div class="product" data-name="p-11">
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/tempe.jpg"
+            alt="tempe"
+          />
+          <h3>Tempe</h3>
+          <span class="product-price">Rp. 1,2345</span>
+        </div>
+        <div class="product" data-name="p-12">
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/ikan-asin.jpg"
+            alt="ikan asin"
+          />
+          <h3>Lauk asin</h3>
+          <span class="product-price">Rp. 1,2345</span>
+        </div>
+        <div class="product" data-name="p-13">
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/ikan-teri.jpg"
+            alt="ikan teri"
+          />
+          <h3>Lauk teri</h3>
+          <span class="product-price">Rp. 1,2345</span>
+        </div>
+        <div class="product" data-name="p-14">
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/peda.jpg"
+            alt="ikan peda"
+          />
+          <h3>Asin peda</h3>
+          <span class="product-price">Rp. 1,2345</span>
+        </div>
+      </div>
+      <div class="products-preview">
+        <div class="preview" data-target="p-1">
+          <i class="fas fa-times"></i>
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/bawang-merah.jpg"
+            alt="bawang merah"
+          />
+          <h3>Bawang beureum</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eligendi
+          </p>
+          <span class="product-price">Rp. 1,2345</span>
+          <div class="button">
+            <a href="#" class="cart"
+              ><ion-icon name="reader-outline"></ion-icon> cirian</a
+            >
+          </div>
+        </div>
+        <div class="preview" data-target="p-2">
+          <i class="fas fa-times"></i>
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/bawang-putih.jpg"
+            alt="bawang putih"
+          />
+          <h3>Bawang bodas</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eligendi
+          </p>
+          <span class="product-price">Rp. 1,2345</span>
+          <div class="button">
+            <a href="#" class="cart"
+              ><ion-icon name="reader-outline"></ion-icon> cirian</a
+            >
+          </div>
+        </div>
+        <div class="preview" data-target="p-3">
+          <i class="fas fa-times"></i>
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/kemiri.jpg"
+            alt="kemiri"
+          />
+          <h3>Muncang</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eligendi
+          </p>
+          <span class="product-price">Rp. 1,2345</span>
+          <div class="button">
+            <a href="#" class="cart"
+              ><ion-icon name="reader-outline"></ion-icon> cirian</a
+            >
+          </div>
+        </div>
+        <div class="preview" data-target="p-4">
+          <i class="fas fa-times"></i>
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/kerupuk-mentah.jpg"
+            alt="kerupuk-mentah"
+          />
+          <h3>Babangi</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eligendi
+          </p>
+          <span class="product-price">Rp. 1,2345</span>
+          <div class="button">
+            <a href="#" class="cart"
+              ><ion-icon name="reader-outline"></ion-icon> cirian</a
+            >
+          </div>
+        </div>
+        <div class="preview" data-target="p-5">
+          <i class="fas fa-times"></i>
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/terigu.jpg"
+            alt="terigu"
+          />
+          <h3>Tarigu</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eligendi
+          </p>
+          <span class="product-price">Rp. 1,2345</span>
+          <div class="button">
+            <a href="#" class="cart"
+              ><ion-icon name="reader-outline"></ion-icon> cirian</a
+            >
+          </div>
+        </div>
+        <div class="preview" data-target="p-6">
+          <i class="fas fa-times"></i>
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/tepung-tapioka.jpg"
+            alt="tepung tapioka"
+          />
+          <h3>Aci</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eligendi
+          </p>
+          <span class="product-price">Rp. 1,2345</span>
+          <div class="button">
+            <a href="#" class="cart"
+              ><ion-icon name="reader-outline"></ion-icon> cirian</a
+            >
+          </div>
+        </div>
+        <div class="preview" data-target="p-7">
+          <i class="fas fa-times"></i>
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/minyak-goreng.jpg"
+            alt="minyak goreng"
+          />
+          <h3>Minyak goreng</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eligendi
+          </p>
+          <span class="product-price">Rp. 1,2345</span>
+          <div class="button">
+            <a href="#" class="cart"
+              ><ion-icon name="reader-outline"></ion-icon> cirian</a
+            >
+          </div>
+        </div>
+        <div class="preview" data-target="p-8">
+          <i class="fas fa-times"></i>
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/telur.jpg"
+            alt="telur"
+          />
+          <h3>Endog</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eligendi
+          </p>
+          <span class="product-price">Rp. 1,2345</span>
+          <div class="button">
+            <a href="#" class="cart"
+              ><ion-icon name="reader-outline"></ion-icon> cirian</a
+            >
+          </div>
+        </div>
+        <div class="preview" data-target="p-9">
+          <i class="fas fa-times"></i>
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/bihun.jpg"
+            alt="bihun"
+          />
+          <h3>Bihun</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eligendi
+          </p>
+          <span class="product-price">Rp. 1,2345</span>
+          <div class="button">
+            <a href="#" class="cart"
+              ><ion-icon name="reader-outline"></ion-icon> cirian</a
+            >
+          </div>
+        </div>
+        <div class="preview" data-target="p-10">
+          <i class="fas fa-times"></i>
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/tahu.jpg"
+            alt="tahu"
+          />
+          <h3>Tahu</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eligendi
+          </p>
+          <span class="product-price">Rp. 1,2345</span>
+          <div class="button">
+            <a href="#" class="cart"
+              ><ion-icon name="reader-outline"></ion-icon> cirian</a
+            >
+          </div>
+        </div>
+        <div class="preview" data-target="p-11">
+          <i class="fas fa-times"></i>
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/tempe.jpg"
+            alt="tempe"
+          />
+          <h3>Tempe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eligendi
+          </p>
+          <span class="product-price">Rp. 1,2345</span>
+          <div class="button">
+            <a href="#" class="cart"
+              ><ion-icon name="reader-outline"></ion-icon> cirian</a
+            >
+          </div>
+        </div>
+        <div class="preview" data-target="p-12">
+          <i class="fas fa-times"></i>
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/ikan-asin.jpg"
+            alt="ikan asin"
+          />
+          <h3>Lauk asin</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eligendi
+          </p>
+          <span class="product-price">Rp. 1,2345</span>
+          <div class="button">
+            <a href="#" class="cart"
+              ><ion-icon name="reader-outline"></ion-icon> cirian</a
+            >
+          </div>
+        </div>
+        <div class="preview" data-target="p-13">
+          <i class="fas fa-times"></i>
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/ikan-teri.jpg"
+            alt="ikan teri"
+          />
+          <h3>Lauk teri</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eligendi
+          </p>
+          <span class="product-price">Rp. 1,2345</span>
+          <div class="button">
+            <a href="#" class="cart"
+              ><ion-icon name="reader-outline"></ion-icon> cirian</a
+            >
+          </div>
+        </div>
+        <div class="preview" data-target="p-14">
+          <i class="fas fa-times"></i>
+          <img
+            src="assets/image/Menu/kebutuhan sehari-hari/peda.jpg"
+            alt="ikan peda"
+          />
+          <h3>Asin peda</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+            eligendi
+          </p>
+          <span class="product-price">Rp. 1,2345</span>
+          <div class="button">
+            <a href="#" class="cart"
+              ><ion-icon name="reader-outline"></ion-icon> cirian</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu section Akhir -->
+
+    <!-- Product section -->
+    <section class="products" id="products">
+      <h2>"Produk Andreas"</h2>
+      <p class="products-subtitle">
+        Produk anu dijual di Warkop Andreas, bisa dipesen langsung di Warkop
+        Andreas atanapi bisa dipesen via online.
+      </p>
+
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><ion-icon name="bag-handle-outline"></ion-icon></a>
+            <a href="#" class="item-detail-button"
+              ><ion-icon name="eye-outline"></ion-icon
+            ></a>
+          </div>
+          <div class="product-img">
+            <img src="assets/image/Menu/products/jcc.jpeg" alt="minyak jcc" />
+          </div>
+          <div class="product-content">
+            <h3>Minyak JCC</h3>
+            <div class="product-stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <span class="product-price"
+              >Rp. 25,000 <span>Rp. 34,000</span></span
+            >
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><ion-icon name="bag-handle-outline"></ion-icon></a>
+            <a href="#" class="item-detail-button"
+              ><ion-icon name="eye-outline"></ion-icon
+            ></a>
+          </div>
+          <div class="product-img">
+            <img src="assets/image/Menu/products/jcc.jpeg" alt="minyak jcc" />
+          </div>
+          <div class="product-content">
+            <h3>Minyak JCC</h3>
+            <div class="product-stars">
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <span class="product-price"
+              >Rp. 25,000 <span>Rp. 34,000</span></span
+            >
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><ion-icon name="bag-handle-outline"></ion-icon></a>
+            <a href="#" class="item-detail-button"
+              ><ion-icon name="eye-outline"></ion-icon
+            ></a>
+          </div>
+          <div class="product-img">
+            <img src="assets/image/Menu/products/jcc.jpeg" alt="minyak jcc" />
+          </div>
+          <div class="product-content">
+            <h3>Minyak JCC</h3>
+            <div class="product-stars">
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <span class="product-price"
+              >Rp. 25,000 <span>Rp. 34,000</span></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product section Akhir -->
+
+    <!-- Contact section -->
+    <section id="contact" class="contact">
+      <h2>"Sési Pataros"</h2>
+      <p class="contact-subtitle">
+        Kangé tiasa tataros perkawis barang peser atanapi perkawis Warkop
+        Andreas
+      </p>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.22583815967977!2d108.22503391653302!3d-7.507858045950498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e65fb1347f4b00b%3A0x94ba86d213a78999!2sWarung%20AA%20(warkop%2C%20jajanan%20dan%20kebutuhan)!5e0!3m2!1sid!2sid!4v1704166405505!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <ion-icon name="person-circle-outline"></ion-icon>
+            <input type="text" placeholder="Nami anjeun" />
+          </div>
+          <div class="input-group">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="text" placeholder="Alamat email" />
+          </div>
+          <div class="input-group">
+            <ion-icon name="call-outline"></ion-icon>
+            <input type="text" placeholder="No hape'" />
+          </div>
+          <button type="submit" class="submit-form">Kirim</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact section Akhir -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/ademiftahulmubarok" target="_blank"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <a href="https://www.facebook.com/rfira3" target="_blank"
+          ><ion-icon name="logo-facebook"></ion-icon
+        ></a>
+        <a href="https://www.tiktok.com/@tiauswah25" target="_blank"
+          ><ion-icon name="logo-tiktok"></ion-icon
+        ></a>
+      </div>
+      <div class="links">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak kami</a>
+      </div>
+      <div class="credit">
+        <p>
+          Created by
+          <a href="https://www.instagram.com/rofifr.abi/">Rofi Fathurrohman</a>
+          | &copy; 2024
+        </p>
+      </div>
+    </footer>
+    <!-- Footer Akhir -->
+
+    <!-- Modal box item detail -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"
+          ><ion-icon name="close-circle-outline"></ion-icon
+        ></a>
+        <div class="modal-content">
+          <img src="assets/image/Menu/products/jcc.jpeg" alt="minyak jcc" />
+          <div class="product-content">
+            <h3>Minyak JCC</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus laboriosam pariatur vel voluptas vero quas, vitae
+              minus corrupti aut illo.
+            </p>
+            <div class="product-stars">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <span class="product-price"
+              >Rp. 25,000 <span>Rp. 34,000</span></span
+            >
+            <a href="#"
+              ><ion-icon name="bag-handle-outline"></ion-icon
+              ><span>Keranjangkeun</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal box item detail Akhir -->
+    <!-- Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- JavaScript Block Code -->
+    <script src="js/andreasscript.js"></script>
+  </body>
+</html>
