@@ -36,6 +36,30 @@ document.addEventListener("alpine:init", () => {
         });
       }
     },
+    remove(id) {
+      // ambil item yang mau di-remove atau dihapus berdasarkan id-nya
+      const cartItem = this.items.find((item) => item.id === id);
+
+      //jika item lebih dari satu
+      if (cartItem.quantity > 1) {
+        // telusuri satu-satu
+        this.items = this.items.map((item) => {
+          // jika bukan barang yang diklik
+          if (item.id != id) {
+            return item;
+          } else {
+            item.quantity--;
+            item.total = item.price * item.quantity;
+            this.quantity--;
+            this.total -= item.price;
+            return item;
+          }
+        });
+      } else if (cartItem.quantity === 1) {
+        //jika barangnya sisa 1
+        this.items = this.items.filter((item) => item.id != id);
+      }
+    },
   });
 });
 
