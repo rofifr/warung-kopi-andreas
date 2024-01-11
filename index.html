@@ -55,22 +55,24 @@
 
       <!-- Shopping Cart -->
       <div class="shopping-cart">
-        <div class="cart-item">
-          <img src="assets/image/Menu/products/jcc.jpeg" alt="Minyak jss" />
-          <div class="item-detail">
-            <h3>Minyak JCC</h3>
-            <div class="item-price">
-              <span>Rp 25.000</span> &times;
-              <div class="qty">
-                <button id="remove">&minus;</button>
-                <span>1</span>
-                <button id="add">&plus;</button>
+        <template x-for="(item, index) in $store.cart.items" x-keys="index">
+          <div class="cart-item">
+            <img :src="`assets/image/Menu/products/${item.img}`" :alt="item.name" />
+            <div class="item-detail">
+              <h3 x-text="item.name"></h3>
+              <div class="item-price">
+                <span x-text="rupiah(item.price)"></span> &times;
+                <div class="qty">
+                  <button id="remove">&minus;</button>
+                  <span x-text="item.quantity"></span>
+                  <button id="add">&plus;</button>
+                </div>
+                &equals;
+                <span x-text="item.total"></span>
               </div>
-              &equals;
-              <span>Rp 25.000</span>
             </div>
           </div>
-        </div>
+        </template>
       </div>
       <!-- Shopping Cart Akhir -->
 
