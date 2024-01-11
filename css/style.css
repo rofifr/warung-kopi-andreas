@@ -131,7 +131,6 @@ body {
   height: 100vh;
   width: 35rem;
   padding: 0 1.5rem;
-  color: #fff;
   background-color: rgba(0, 0, 0, 0.8);
   transition: 0.3s ease-in-out;
 }
@@ -145,14 +144,17 @@ body {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
   border-bottom: 1px solid #dddddd;
   position: relative;
 }
 
 .shopping-cart img {
-  height: 6rem;
+  height: 4.5rem;
   border-radius: 1rem;
+  border: 1px solid var(--primaryText);
 }
 
 .shopping-cart h3 {
@@ -164,16 +166,23 @@ body {
   font-size: 1.2rem;
 }
 
-.shopping-cart .remove-item {
-  position: absolute;
-  right: 1rem;
-  cursor: pointer;
-  font-size: 1.5rem;
-  transition: 0.2s;
+.shopping-cart .cart-item .item-detail .item-price .qty {
+  background-color: #f1f1f1;
+  display: inline-block;
+  padding: 0.2rem 0 0.3rem;
+  border-radius: 1rem;
 }
-
-.shopping-cart .remove-item:hover {
-  color: tomato;
+.shopping-cart .cart-item #add,
+.shopping-cart .cart-item #remove {
+  display: inline-block;
+  padding: 1px 6px;
+  cursor: pointer;
+  margin: 0 8px;
+  background-color: rgb(206, 206, 206);
+  border-radius: 1.5rem;
+  color: var(--primaryText);
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 /* Hero sections */
 .hero {

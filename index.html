@@ -26,7 +26,7 @@
   </head>
   <body id="my-scrollbar">
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" x-data>
       <a href="#" class="navbar-logo"><img src="assets/image/andreaslogo.png" alt="andreaslogo" class="logo" /></a>
 
       <div class="navbar-nav">
@@ -42,7 +42,7 @@
         <a href="#" id="search-button"><ion-icon name="search-outline"></ion-icon></a>
         <a href="#" id="shopping-cart-button"
           ><ion-icon name="cart-outline"></ion-icon>
-          <span class="quantity-badge" x-text="$store.cart.quantity"></span>
+          <span class="quantity-badge" x-show="$store.cart.quantity" x-text="$store.cart.quantity"></span>
         </a>
         <a href="#" id="hamburger-menu"><ion-icon name="menu-outline"></ion-icon></a>
       </div>
@@ -59,25 +59,17 @@
           <img src="assets/image/Menu/products/jcc.jpeg" alt="Minyak jss" />
           <div class="item-detail">
             <h3>Minyak JCC</h3>
-            <div class="item-price">Rp. 25,000</div>
+            <div class="item-price">
+              <span>Rp 25.000</span> &times;
+              <div class="qty">
+                <button id="remove">&minus;</button>
+                <span>1</span>
+                <button id="add">&plus;</button>
+              </div>
+              &equals;
+              <span>Rp 25.000</span>
+            </div>
           </div>
-          <ion-icon name="trash-outline" class="remove-item"></ion-icon>
-        </div>
-        <div class="cart-item">
-          <img src="assets/image/Menu/products/jcc.jpeg" alt="Minyak jss" />
-          <div class="item-detail">
-            <h3>Minyak JCC</h3>
-            <div class="item-price">Rp. 25,000</div>
-          </div>
-          <ion-icon name="trash-outline" class="remove-item"></ion-icon>
-        </div>
-        <div class="cart-item">
-          <img src="assets/image/Menu/products/jcc.jpeg" alt="Minyak jss" />
-          <div class="item-detail">
-            <h3>Minyak JCC</h3>
-            <div class="item-price">Rp. 25,000</div>
-          </div>
-          <ion-icon name="trash-outline" class="remove-item"></ion-icon>
         </div>
       </div>
       <!-- Shopping Cart Akhir -->
