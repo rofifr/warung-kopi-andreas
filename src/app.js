@@ -58,6 +58,8 @@ document.addEventListener("alpine:init", () => {
       } else if (cartItem.quantity === 1) {
         //jika barangnya sisa 1
         this.items = this.items.filter((item) => item.id != id);
+        this.quantity--;
+        this.total -= cartItem.price;
       }
     },
   });

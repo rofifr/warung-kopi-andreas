@@ -135,6 +135,10 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+.shopping-cart h4 {
+  color: #fff;
+}
+
 .shopping-cart.active {
   right: 0;
 }
