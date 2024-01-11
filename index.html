@@ -73,7 +73,7 @@
             </div>
           </div>
         </template>
-        <h4 x-show="!$store.cart.items.length">Keranjangna teu acan ayaan</h4>
+        <h4 x-show="!$store.cart.items.length" class="info-cart"><ion-icon name="alert-circle-outline"></ion-icon> Keranjangna teu acan ayaan</h4>
         <h4 x-show="$store.cart.items.length">Total : <span x-text="rupiah($store.cart.total)"></span></h4>
       </div>
       <!-- Shopping Cart Akhir -->

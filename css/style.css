@@ -135,7 +135,27 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+.shopping-cart h4.info-cart {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  background-color: #e4e4e4;
+  border-radius: 0.5rem;
+  color: tomato;
+}
+
+.shopping-cart h4.info-cart ion-icon {
+  font-size: 2rem;
+}
+
 .shopping-cart h4 {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  text-align: center;
   color: #fff;
 }
 
