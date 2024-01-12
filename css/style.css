@@ -217,6 +217,7 @@ body {
   width: 100%;
   background-color: #fff;
   color: var(--primaryText);
+  border-radius: 0.5rem;
   display: flex;
   justify-content: center;
   border-top: 1px solid var(--secondary);
@@ -226,7 +227,7 @@ body {
 
 .shopping-cart .form-container h5 {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .shopping-cart .form-container form {
@@ -241,26 +242,27 @@ body {
   margin: 1rem 0;
 }
 
-/* .shopping-cart .form-container span {
-  text-align: right;
-} */
-
 .shopping-cart .form-container input {
   background-color: #dddddd;
-  padding: 5px;
+  padding: 0.7rem;
   font-size: 1rem;
   width: 70%;
 }
 
 .shopping-cart .form-container .checkout-button {
-  padding: 6px 14px;
+  padding: 0.5rem 1rem;
   background-color: var(--secondary);
   color: #fff;
   font-weight: bold;
   font-size: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   margin: 1rem auto;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.shopping-cart .form-container .checkout-button:hover {
+  background-color: #3d3d3d;
 }
 
 /* Hero sections */
