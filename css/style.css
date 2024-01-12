@@ -265,6 +265,10 @@ body {
   background-color: #3d3d3d;
 }
 
+.shopping-cart .form-container .checkout-button.disabled {
+  background-color: #b9b9b9;
+  cursor: not-allowed;
+}
 /* Hero sections */
 .hero {
   min-height: 90vh;
